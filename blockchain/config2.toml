@@ -1,0 +1,100 @@
+[Eth]
+NetworkId = 47
+SyncMode = "full"
+EthDiscoveryURLs = []
+SnapDiscoveryURLs = []
+NoPruning = false
+NoPrefetch = false
+TxLookupLimit = 2350000
+LightPeers = 100
+UltraLightFraction = 75
+DatabaseCache = 512
+DatabaseFreezer = ""
+TrieCleanCache = 154
+TrieCleanCacheJournal = "triecache"
+TrieCleanCacheRejournal = 3600000000000
+TrieDirtyCache = 256
+TrieTimeout = 3600000000000
+SnapshotCache = 102
+Preimages = false
+EnablePreimageRecording = false
+RPCGasCap = 50000000
+RPCEVMTimeout = 5000000000
+RPCTxFeeCap = 1e+00
+
+[Eth.Miner]
+GasFloor = 0
+GasCeil = 8000000
+GasPrice = 1000000000
+Recommit = 3000000000
+Noverify = false
+
+[Eth.Ethash]
+CacheDir = "ethash"
+CachesInMem = 2
+CachesOnDisk = 3
+CachesLockMmap = false
+DatasetDir = "/root/.ethash"
+DatasetsInMem = 1
+DatasetsOnDisk = 2
+DatasetsLockMmap = false
+PowMode = 0
+NotifyFull = false
+
+[Eth.TxPool]
+Locals = []
+NoLocals = false
+Journal = "transactions.rlp"
+Rejournal = 3600000000000
+PriceLimit = 1
+PriceBump = 10
+AccountSlots = 16
+GlobalSlots = 5120
+AccountQueue = 64
+GlobalQueue = 1024
+Lifetime = 10800000000000
+
+[Eth.GPO]
+Blocks = 20
+Percentile = 60
+MaxHeaderHistory = 1024
+MaxBlockHistory = 1024
+MaxPrice = 500000000000
+IgnorePrice = 2
+
+[Node]
+HTTPHost = "127.0.0.1"
+HTTPPort = 8545
+HTTPVirtualHosts = ["*"]
+HTTPModules = ["net", "web3", "eth", "clique", "debug"]
+WSHost = "127.0.0.1"
+WSPort = 8546
+WSModules = ["net", "web3", "eth"]
+GraphQLVirtualHosts = ["localhost"]
+
+[Node.P2P]
+MaxPeers = 50
+NoDiscovery = false
+BootstrapNodes = ["enode://0ed8489a499da17cbb7793d05fa9d2c3751de1ba1f82aac474a242a30cf2c0481b322e8ca93c6870f178115071131385a3e6ba8a9ac316bc6cb5b26d5b3c3729@149.102.130.10:30303","enode://05f71acd446aa82e8fa30d2657fbc1e3321399123ca9aa54fde9e2f6981fb72df3ebdaba9894ed603c8c1c33ac3aa11721d6450643bd120def7f72640287d9a7@149.102.130.8:30303","enode://8c3bbf55bce53b08eac74d5d331792d57e699c1675dc44b9bb8228728eb39b56d12702a9f062dd40b7bdd540baaedce23aa71c85df4e4fd18fef0f7cd3f05aa0@149.102.130.7:30303","enode://f0c46dfa3c27e6c2b212cf0a3f6e74ac0bd196390b77d28ccbc7a80639611c34d6bcfe8093cbe2c6fa72dc04728b393fb3a9d39617e4cc39b13ec10d4193ffe5@149.102.130.7:30303","enode://0ed8489a499da17cbb7793d05fa9d2c3751de1ba1f82aac474a242a30cf2c0481b322e8ca93c6870f178115071131385a3e6ba8a9ac316bc6cb5b26d5b3c3729@149.102.130.10:30303","enode://05f71acd446aa82e8fa30d2657fbc1e3321399123ca9aa54fde9e2f6981fb72df3ebdaba9894ed603c8c1c33ac3aa11721d6450643bd120def7f72640287d9a7@149.102.130.8:30303","enode://8c3bbf55bce53b08eac74d5d331792d57e699c1675dc44b9bb8228728eb39b56d12702a9f062dd40b7bdd540baaedce23aa71c85df4e4fd18fef0f7cd3f05aa0@149.102.130.7:30303","enode://f0c46dfa3c27e6c2b212cf0a3f6e74ac0bd196390b77d28ccbc7a80639611c34d6bcfe8093cbe2c6fa72dc04728b393fb3a9d39617e4cc39b13ec10d4193ffe5@149.102.130.7:30303"]
+BootstrapNodesV5 = []
+StaticNodes = ["enode://0ed8489a499da17cbb7793d05fa9d2c3751de1ba1f82aac474a242a30cf2c0481b322e8ca93c6870f178115071131385a3e6ba8a9ac316bc6cb5b26d5b3c3729@149.102.130.10:30303","enode://05f71acd446aa82e8fa30d2657fbc1e3321399123ca9aa54fde9e2f6981fb72df3ebdaba9894ed603c8c1c33ac3aa11721d6450643bd120def7f72640287d9a7@149.102.130.8:30303","enode://8c3bbf55bce53b08eac74d5d331792d57e699c1675dc44b9bb8228728eb39b56d12702a9f062dd40b7bdd540baaedce23aa71c85df4e4fd18fef0f7cd3f05aa0@149.102.130.7:30303","enode://f0c46dfa3c27e6c2b212cf0a3f6e74ac0bd196390b77d28ccbc7a80639611c34d6bcfe8093cbe2c6fa72dc04728b393fb3a9d39617e4cc39b13ec10d4193ffe5@149.102.130.7:30303","enode://0ed8489a499da17cbb7793d05fa9d2c3751de1ba1f82aac474a242a30cf2c0481b322e8ca93c6870f178115071131385a3e6ba8a9ac316bc6cb5b26d5b3c3729@149.102.130.10:30303","enode://05f71acd446aa82e8fa30d2657fbc1e3321399123ca9aa54fde9e2f6981fb72df3ebdaba9894ed603c8c1c33ac3aa11721d6450643bd120def7f72640287d9a7@149.102.130.8:30303","enode://8c3bbf55bce53b08eac74d5d331792d57e699c1675dc44b9bb8228728eb39b56d12702a9f062dd40b7bdd540baaedce23aa71c85df4e4fd18fef0f7cd3f05aa0@149.102.130.7:30303","enode://f0c46dfa3c27e6c2b212cf0a3f6e74ac0bd196390b77d28ccbc7a80639611c34d6bcfe8093cbe2c6fa72dc04728b393fb3a9d39617e4cc39b13ec10d4193ffe5@149.102.130.7:30303"]
+TrustedNodes = ["enode://0ed8489a499da17cbb7793d05fa9d2c3751de1ba1f82aac474a242a30cf2c0481b322e8ca93c6870f178115071131385a3e6ba8a9ac316bc6cb5b26d5b3c3729@149.102.130.10:30303","enode://05f71acd446aa82e8fa30d2657fbc1e3321399123ca9aa54fde9e2f6981fb72df3ebdaba9894ed603c8c1c33ac3aa11721d6450643bd120def7f72640287d9a7@149.102.130.8:30303","enode://8c3bbf55bce53b08eac74d5d331792d57e699c1675dc44b9bb8228728eb39b56d12702a9f062dd40b7bdd540baaedce23aa71c85df4e4fd18fef0f7cd3f05aa0@149.102.130.7:30303","enode://f0c46dfa3c27e6c2b212cf0a3f6e74ac0bd196390b77d28ccbc7a80639611c34d6bcfe8093cbe2c6fa72dc04728b393fb3a9d39617e4cc39b13ec10d4193ffe5@149.102.130.7:30303","enode://0ed8489a499da17cbb7793d05fa9d2c3751de1ba1f82aac474a242a30cf2c0481b322e8ca93c6870f178115071131385a3e6ba8a9ac316bc6cb5b26d5b3c3729@149.102.130.10:30303","enode://05f71acd446aa82e8fa30d2657fbc1e3321399123ca9aa54fde9e2f6981fb72df3ebdaba9894ed603c8c1c33ac3aa11721d6450643bd120def7f72640287d9a7@149.102.130.8:30303","enode://8c3bbf55bce53b08eac74d5d331792d57e699c1675dc44b9bb8228728eb39b56d12702a9f062dd40b7bdd540baaedce23aa71c85df4e4fd18fef0f7cd3f05aa0@149.102.130.7:30303","enode://f0c46dfa3c27e6c2b212cf0a3f6e74ac0bd196390b77d28ccbc7a80639611c34d6bcfe8093cbe2c6fa72dc04728b393fb3a9d39617e4cc39b13ec10d4193ffe5@149.102.130.7:30303"]
+ListenAddr = ":30303"
+EnableMsgEvents = false
+
+[Node.HTTPTimeouts]
+ReadTimeout = 30000000000
+WriteTimeout = 30000000000
+IdleTimeout = 120000000000
+
+[Metrics]
+HTTP = "127.0.0.1"
+Port = 6060
+InfluxDBEndpoint = "http://localhost:8086"
+InfluxDBDatabase = "geth"
+InfluxDBUsername = "test"
+InfluxDBPassword = "test"
+InfluxDBTags = "host=localhost"
+InfluxDBToken = "test"
+InfluxDBBucket = "geth"
+InfluxDBOrganization = "geth"

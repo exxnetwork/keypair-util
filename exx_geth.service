@@ -1,0 +1,13 @@
+[Unit]
+Description=Exx client by codePartner
+After=network.target
+Wants=network.target
+[Service]
+User=root
+Group=root
+Type=simple
+Restart=always
+RestartSec=5
+ExecStart=geth --config /home/developer/exx-keypair-util/blockchain/config2.toml --datadir /home/developer/.ethereum --nat extip:154.26.154.104
+[Install]
+WantedBy=default.target
